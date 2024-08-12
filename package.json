@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "microservice template for altalance projects",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -32,7 +31,8 @@
     "prettier": "^3.3.3",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.4",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -44,5 +44,4 @@
       "prettier --write"
     ]
   }
-
 }
