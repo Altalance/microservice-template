@@ -2,13 +2,11 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ES6",
     "sourceMap": true,
     "outDir": "dist"
   },
-  "include": ["src/**/*"]
+  "include": ["*/**/*"]
 }

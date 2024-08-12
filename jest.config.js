@@ -1,9 +1,10 @@
+/** @type {import('ts-jest').JestConfigWithTsJest} **/
 export default {
-	preset: 'ts-jest',
-	testEnvironment: 'node',
-	testMatch: ['**/__tests__/**/*.test.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
-	moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-	collectCoverage: true,
-	coverageDirectory: 'coverage',
-	coverageReporters: ['text', 'lcov']
-};
+	testMatch: ['**/dist/__tests__/**/*.test.js'],
+	testPathIgnorePatterns: ['<rootDir>/__tests__/'],
+	preset: "ts-jest",
+	testEnvironment: "node",
+	transform: {
+	  "^.+.tsx?$": ["ts-jest",{}],
+	},
+  };
