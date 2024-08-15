@@ -1,9 +1,10 @@
 import express, { Application } from 'express';
-import router from './routes';
+import dummy from './routes/dummy.route'
+
 
 export const app: Application = express();
 
 app.use(express.json());
-app.use('/', router);
+app.use('/', dummy);
 
 
